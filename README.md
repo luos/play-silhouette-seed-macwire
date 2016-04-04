@@ -3,6 +3,10 @@ Silhouette Macwire Example bindings
 Please note that this is not production ready 
 ====================
 
+* contains example how to configure silhouette with macwire 
+* contains example how to use AhcWsClient with macwire
+* contains example how to use CsrfFilter and securityHeadersFilter with macwire
+* 
 
 Silhouette Seed Template
 =====================================

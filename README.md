@@ -1,3 +1,9 @@
+Silhouette Macwire Example bindings
+===================
+Please note that this is not production ready 
+====================
+
+
 Silhouette Seed Template
 =====================================
 

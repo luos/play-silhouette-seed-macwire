@@ -14,18 +14,22 @@ resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
 
 resolvers += Resolver.sonatypeRepo("snapshots")
 
+resolvers += Resolver.jcenterRepo
+
 libraryDependencies ++= Seq(
   "com.mohiva" %% "play-silhouette" % "4.0.0-BETA4",
   "com.mohiva" %% "play-silhouette-password-bcrypt" % "4.0.0-BETA4",
   "com.mohiva" %% "play-silhouette-persistence-memory" % "4.0.0-BETA4",
   "org.webjars" %% "webjars-play" % "2.5.0",
   "net.codingwell" %% "scala-guice" % "4.0.1",
-  "com.iheart" %% "ficus" % "1.2.0",
+  "com.iheart" %% "ficus" % "1.2.3",
   "com.adrianhurt" %% "play-bootstrap" % "1.0-P25-B3-SNAPSHOT",
   "com.mohiva" %% "play-silhouette-testkit" % "4.0.0-BETA4" % "test",
   specs2 % Test,
   cache,
-  filters
+  filters,
+  "com.softwaremill.macwire" %% "macros" % "1.0.7",
+  "com.softwaremill.macwire" %% "runtime" % "1.0.7"
 )
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)

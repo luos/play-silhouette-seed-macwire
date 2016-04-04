@@ -182,7 +182,8 @@ class SilhouetteModule extends AbstractModule with ScalaModule {
   def provideCredentialsProvider(
     authInfoRepository: AuthInfoRepository,
     passwordHasher: PasswordHasher): CredentialsProvider = {
-
+    println(authInfoRepository)
+    val a = 3 * 3
     new CredentialsProvider(authInfoRepository, passwordHasher, Seq(passwordHasher))
   }
 

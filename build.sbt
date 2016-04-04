@@ -29,7 +29,8 @@ libraryDependencies ++= Seq(
   cache,
   filters,
   "com.softwaremill.macwire" %% "macros" % "1.0.7",
-  "com.softwaremill.macwire" %% "runtime" % "1.0.7"
+  "com.softwaremill.macwire" %% "runtime" % "1.0.7",
+  ws
 )
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
